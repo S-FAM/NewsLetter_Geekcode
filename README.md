@@ -8,7 +8,7 @@
 
 
 ## 참여멤버
-- [@eung7](https://github.com/eung7) - [EggTimer](https://github.com/iOS-PPAK/NewsLetter_Eung7)
-- [@WhiteHyun](https://github.com/WhiteHyun) - [EggTimer](https://github.com/iOS-PPAK/NewsLetter_WhiteHyun)
-- [@minji0801](https://github.com/minji0801) - [EggTimer](https://github.com/iOS-PPAK/NewsLetter_MinjiKim)
-- [@isGeekCode](https://github.com/isGeekCode) - [EggTimer](https://github.com/iOS-PPAK/EggTimer_GeekCode)
+- [@eung7](https://github.com/eung7) - [NewsLetter](https://github.com/iOS-PPAK/NewsLetter_Eung7)
+- [@WhiteHyun](https://github.com/WhiteHyun) - [NewsLetter](https://github.com/iOS-PPAK/NewsLetter_WhiteHyun)
+- [@minji0801](https://github.com/minji0801) - [NewsLetter](https://github.com/iOS-PPAK/NewsLetter_MinjiKim)
+- [@isGeekCode](https://github.com/isGeekCode) - [NewsLetter](https://github.com/iOS-PPAK/EggTimer_GeekCode)
