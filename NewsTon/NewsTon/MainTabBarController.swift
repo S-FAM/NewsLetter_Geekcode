@@ -41,8 +41,6 @@ class MainTabBarController: UITabBarController {
         settingVC.title = "설정"
         
         
-//        tabBar.unselectedItemTintColor = .black
-//        tabBar.tintColor = 
         tabBar.backgroundColor = .lightGray
         tabBar.isTranslucent = false
 
