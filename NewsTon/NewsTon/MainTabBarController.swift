@@ -15,8 +15,6 @@ class MainTabBarController: UITabBarController {
     let bookmarkVC = BookMarkViewController()
     let settingVC = SettingViewController()
 
-    
-    
    
     
     override func viewDidLoad() {
