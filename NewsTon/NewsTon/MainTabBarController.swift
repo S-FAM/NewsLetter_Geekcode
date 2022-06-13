@@ -10,12 +10,31 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
-    let homeVC = HomeViewController()
-    let searchVC = SearchViewController()
-    let bookmarkVC = BookMarkViewController()
-    let settingVC = SettingViewController()
+    func configureTabBarItem(_ type: TabMenuType) -> UITabBarItem { return type.menuTabItem }
 
-   
+    private lazy var homeVC: UIViewController = {
+        let homeViewController = UINavigationController(rootViewController: HomeViewController())
+        homeViewController.tabBarItem = configureTabBarItem(.home)
+        return homeViewController
+    }()
+    
+    private lazy var searchVC: UIViewController = {
+        let searchVC = SearchViewController()
+        searchVC.tabBarItem = configureTabBarItem(.search)
+        return searchVC
+    }()
+    
+    private lazy var bookmarkVC: UIViewController = {
+        let bookmarkVC = BookMarkViewController()
+        bookmarkVC.tabBarItem = configureTabBarItem(.bookmark)
+        return bookmarkVC
+    }()
+    private lazy var settingVC: UIViewController = {
+        let settingVC = SettingViewController()
+        settingVC.tabBarItem = configureTabBarItem(.setting)
+        return settingVC
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +46,32 @@ class MainTabBarController: UITabBarController {
             settingVC
         ]
         setViewControllers(viewControllers, animated: false)
-        
-        homeVC.tabBarItem.image = UIImage(systemName: "newspaper")
-        searchVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        bookmarkVC.tabBarItem.image = UIImage(systemName: "star")
-        settingVC.tabBarItem.image = UIImage(systemName: "gear")
-        
-        homeVC.title = "뉴스"
-        searchVC.title = "검색"
-        bookmarkVC.title = "북마크"
-        settingVC.title = "설정"
-        
-        
         tabBar.backgroundColor = .lightGray
         tabBar.isTranslucent = false
 
     }
+    
+}
+
+extension MainTabBarController  {
+    func tabChange(menu: TabMenuType) {
+    
+
+        switch menu {
+        case .home:
+            self.selectedIndex = 0
+            break
+        case .search:
+            self.selectedIndex = 1
+            break
+        case .bookmark:
+            self.selectedIndex = 2
+            break
+        case .setting:
+            break
+        }
+        
+    }
+    
     
 }

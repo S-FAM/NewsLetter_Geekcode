@@ -12,6 +12,7 @@
 		9CB01F0C28546C89000B265D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB01F0B28546C89000B265D /* SearchViewController.swift */; };
 		9CB01F0E28546C96000B265D /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB01F0D28546C96000B265D /* BookMarkViewController.swift */; };
 		9CB01F1028546CA1000B265D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB01F0F28546CA1000B265D /* SettingViewController.swift */; };
+		9CB01F1228575947000B265D /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB01F1128575947000B265D /* Enum.swift */; };
 		9CC93D7F2852427B00750CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC93D7E2852427B00750CC8 /* AppDelegate.swift */; };
 		9CC93D812852427B00750CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC93D802852427B00750CC8 /* SceneDelegate.swift */; };
 		9CC93D832852427B00750CC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC93D822852427B00750CC8 /* HomeViewController.swift */; };
@@ -25,6 +26,7 @@
 		9CB01F0B28546C89000B265D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9CB01F0D28546C96000B265D /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
 		9CB01F0F28546CA1000B265D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9CB01F1128575947000B265D /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		9CC93D7B2852427B00750CC8 /* NewsTon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC93D7E2852427B00750CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC93D802852427B00750CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				9CC93D842852427B00750CC8 /* Main.storyboard */,
 				9CC93D872852427E00750CC8 /* Assets.xcassets */,
 				9CC93D892852427E00750CC8 /* LaunchScreen.storyboard */,
+				9CB01F1128575947000B265D /* Enum.swift */,
 				9CC93D8C2852427E00750CC8 /* Info.plist */,
 			);
 			path = NewsTon;
@@ -160,6 +163,7 @@
 			files = (
 				9CB01F0C28546C89000B265D /* SearchViewController.swift in Sources */,
 				9CC93D832852427B00750CC8 /* HomeViewController.swift in Sources */,
+				9CB01F1228575947000B265D /* Enum.swift in Sources */,
 				9CC93D7F2852427B00750CC8 /* AppDelegate.swift in Sources */,
 				9CB01F0A28546786000B265D /* MainTabBarController.swift in Sources */,
 				9CB01F0E28546C96000B265D /* BookMarkViewController.swift in Sources */,

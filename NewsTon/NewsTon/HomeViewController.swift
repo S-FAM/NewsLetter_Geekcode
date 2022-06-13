@@ -36,17 +36,42 @@ class HomeViewController: UIViewController {
             
         }
     }
-    
-    
-    //ViewDidLoad
-    
+    //TODO: - 페이지 진입, 이탈
+    //TODO: - 셀 생성
+    //TODO: - 셀 갱신
+    //TODO: - API 구현
+    //TODO: - API 결과처리
+    //TODO: - 테이블뷰 Delegate
+    //TODO: - 네비게이션바 구현
+    //TODO: - 서치바 구현
+    //TODO: - 스켈레톤
+    //TODO: - Equipment Type 분류 home, bookmark
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(testButton)
-        
+        setupNavigationBar()
 
     }
     
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.isHidden = false
+        
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "Chalkboard SE", size: 25)!
+        ]
+        
+        navigationItem.title = "home"
+        navigationController?.navigationBar.tintColor = UIColor.black
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(backBarButtonTapped(_:)))
+        
+//        navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    
+    @objc func backBarButtonTapped(_ sender: UIBarButtonItem) {
+            self.dismiss(animated: true)
+        }
 }
 
