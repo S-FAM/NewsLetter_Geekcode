@@ -41,20 +41,41 @@ class BookMarkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(testButton)
-
+//        self.view.addSubview(testButton)
+        setupNavigationBar()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.isHidden = false
+    
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "Chalkboard SE", size: 25)!
+        ]
+        
+//        if self.searchType == .sports {
+        navigationItem.title = "북마크"
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//        }
+        navigationController?.navigationBar.tintColor = UIColor.white
+        
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(backBarButtonTapped(_:)))
+//
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithTransparentBackground()
+        navigationBarAppearance.backgroundColor = UIColor.systemTeal
+    
+        navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        navigationItem.scrollEdgeAppearance = navigationBarAppearance
+        navigationItem.standardAppearance = navigationBarAppearance
+        navigationItem.compactAppearance = navigationBarAppearance
+
+        navigationController?.setNeedsStatusBarAppearanceUpdate()
     }
-    */
 
 }

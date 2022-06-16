@@ -19,18 +19,18 @@ class MainTabBarController: UITabBarController {
     }()
     
     private lazy var searchVC: UIViewController = {
-        let searchVC = SearchViewController()
+        let searchVC = UINavigationController(rootViewController: SearchViewController())
         searchVC.tabBarItem = configureTabBarItem(.search)
         return searchVC
     }()
     
     private lazy var bookmarkVC: UIViewController = {
-        let bookmarkVC = BookMarkViewController()
+        let bookmarkVC = UINavigationController(rootViewController: BookMarkViewController())
         bookmarkVC.tabBarItem = configureTabBarItem(.bookmark)
         return bookmarkVC
     }()
     private lazy var settingVC: UIViewController = {
-        let settingVC = SettingViewController()
+        let settingVC = UINavigationController(rootViewController: SettingViewController())
         settingVC.tabBarItem = configureTabBarItem(.setting)
         return settingVC
     }()

@@ -33,7 +33,7 @@ enum TabMenuType {
     private var image: UIImage? {
         switch self {
         case .home: return UIImage(systemName: "house")
-        case .search: return UIImage(systemName: "airplane")
+        case .search: return UIImage(systemName: "magnifyingglass")
         case .bookmark: return UIImage(systemName: "star")
         case .setting: return UIImage(systemName: "gear")
         }
