@@ -29,13 +29,10 @@ class HomeViewController: UIViewController {
     
     @objc func testButtonTapped(sender: UIButton){
         print("Home Tapped!!")
-        let tabBar = self.tabBarController?.tabBar
-        UIView.animate(withDuration: TimeInterval(0.3)) {
-            tabBar?.alpha = tabBar?.alpha == 1 ? 0 : 1
-            self.testButton.backgroundColor = tabBar?.alpha == 1 ? .gray : .systemTeal
-            
-        }
+        NewsApi.requestAPIToNaver(queryValue: "순대")
+        
     }
+    
     
     //!!!: - 태그는 우선 하드코딩
     //TODO: - 셀 생성
@@ -47,7 +44,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.addSubview(testButton)
+        self.view.addSubview(testButton)
         setupNavigationBar()
 
     }
